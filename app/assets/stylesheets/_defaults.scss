@@ -1,0 +1,48 @@
+@import 'https://fonts.googleapis.com/css?family=Abel';
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$logo-image: asset-path('logo3.svg');
+$my-logo-image: asset-path('my_logo_no_data.svg');
+$navbar-background: #D4DEE6;
+
+body {
+  background-color: white;
+  font-family: 'Anita  Semi-square', 'Abel', sans-serif;
+  font-size: 20px;
+  height: 100%;
+}
+
+.navbar {
+  background-color: $navbar-background;
+}
+
+.logo-image {
+  background-image: url($logo-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 29px;
+  width: 245px;
+}
+
+.btn {
+  box-shadow: 3px 3px 5px #888888;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: $navbar-background;
+}
+
+.my-logo {
+  background-image: url($my-logo-image);
+  height: 35px;
+  width: 17px;
+}
