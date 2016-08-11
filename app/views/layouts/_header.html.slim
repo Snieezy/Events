@@ -6,9 +6,19 @@ nav class="navbar navbar-default"
       ul class="nav navbar-nav"
         li
           = link_to "Events"
-        li
-          = link_to "Sign in"
-        li
-          = link_to "Sign up"
+        -if current_user
+          li
+            = link_to destroy_user_session_path, method: :delete do
+              span
+                = "Sign out"
+        - else
+          li
+            = link_to new_user_session_path do
+              span
+                = "Sign in"
+          li
+            = link_to new_user_registration_path do
+              span
+                = "Sign up"
         li
           = link_to "Contact"

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0'
-gem 'sqlite3'
+gem 'pg'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'slim'
@@ -11,6 +11,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'devise'
 
 group :test do
   gem 'shoulda-matchers', '~>3.1'
@@ -20,6 +21,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.4'
   gem 'byebug', platform: :mri
   gem 'rails-controller-testing'
+  gem 'html2slim'
 end
 
 group :development do
@@ -29,4 +31,3 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
