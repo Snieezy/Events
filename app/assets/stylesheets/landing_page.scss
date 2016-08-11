@@ -1,0 +1,40 @@
+@import "_defaults.scss";
+
+$landing-page-image: asset-path('landing_page.jpg');
+$background-image: asset-path('background.png');
+
+.title-image {
+  background-image: url($landing-page-image);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.main-title {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.box {
+  margin-top: 100px;
+}
+
+.button-margin {
+  margin-top: 20px;
+}
+
+.main-holder {
+  margin-top: 60px;
+}
+
+body {
+  background-image: url($background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}

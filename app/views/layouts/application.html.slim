@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type"
+    title
+      | EventGO
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .container
+      header
+        = render "layouts/header" unless @skip_header
+      = yield
+    footer
+      = render "layouts/footer" unless @skip_footer
